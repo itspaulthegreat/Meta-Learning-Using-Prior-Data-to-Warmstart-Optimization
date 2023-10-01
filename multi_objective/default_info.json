@@ -1,0 +1,30 @@
+{
+    "default_config": {
+        "batch_size": 101,
+        "cv_count": 3,
+        "dataset": "deepweedsx_balanced",
+        "datasetpath": "/work/dlclarge2/mallik-automl-ss23/data",
+        "device": "cpu",
+        "dropout_rate": 0.2,
+        "global_avg_pooling": true,
+        "kernel_size": 3,
+        "learning_rate_init": 0.000319,
+        "n_channels_conv_0": 66,
+        "n_channels_fc_0": 55,
+        "n_conv_layers": 2,
+        "n_fc_layers": 2,
+        "use_BN": true,
+        "n_channels_conv_1": 229,
+        "n_channels_fc_1": 25
+    },
+    "default_validation": {
+        "error": 0.38942108535938724,
+        "cost": 571.0597823460897,
+        "macs": 37.181311
+    },
+    "default_test": {
+        "error": 0.3925000074754159,
+        "cost": 865.0612180233002,
+        "macs": 37.181311
+    }
+}

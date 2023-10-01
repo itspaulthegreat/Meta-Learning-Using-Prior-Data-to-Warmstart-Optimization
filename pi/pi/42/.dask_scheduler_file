@@ -1,0 +1,251 @@
+{
+  "type": "Scheduler",
+  "id": "Scheduler-b5dd79ca-b2e3-4e49-951c-2b223857fed0",
+  "address": "tcp://127.0.0.1:35377",
+  "services": {
+    "dashboard": 38337
+  },
+  "started": 1693578062.6951022,
+  "workers": {
+    "tcp://127.0.0.1:39365": {
+      "type": "Worker",
+      "id": 3,
+      "host": "127.0.0.1",
+      "resources": {},
+      "local_directory": "/pfs/data5/home/fr/fr_fr/fr_as1829/projects/automl/pi/pi/42/dask-worker-space/worker-88j6ud6t",
+      "name": 3,
+      "nthreads": 1,
+      "memory_limit": 5368709120,
+      "last_seen": 1693578067.4788208,
+      "services": {
+        "dashboard": 40269
+      },
+      "metrics": {
+        "task_counts": {},
+        "bandwidth": {
+          "total": 100000000,
+          "workers": {},
+          "types": {}
+        },
+        "managed_bytes": 0,
+        "spilled_bytes": {
+          "memory": 0,
+          "disk": 0
+        },
+        "transfer": {
+          "incoming_bytes": 0,
+          "incoming_count": 0,
+          "incoming_count_total": 0,
+          "outgoing_bytes": 0,
+          "outgoing_count": 0,
+          "outgoing_count_total": 0
+        },
+        "event_loop_interval": 0.02,
+        "cpu": 0.0,
+        "memory": 425410560,
+        "time": 1693578067.435838,
+        "host_net_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "host_disk_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "num_fds": 22,
+        "gpu_utilization": 0,
+        "gpu_memory_used": 289603584,
+        "gpu": {
+          "utilization": 0,
+          "memory-used": 289603584
+        }
+      },
+      "status": "running",
+      "nanny": "tcp://127.0.0.1:34271",
+      "gpu": {
+        "memory-total": 34359738368,
+        "name": "Tesla V100-SXM2-32GB"
+      }
+    },
+    "tcp://127.0.0.1:40385": {
+      "type": "Worker",
+      "id": 2,
+      "host": "127.0.0.1",
+      "resources": {},
+      "local_directory": "/pfs/data5/home/fr/fr_fr/fr_as1829/projects/automl/pi/pi/42/dask-worker-space/worker-zcea90g4",
+      "name": 2,
+      "nthreads": 1,
+      "memory_limit": 5368709120,
+      "last_seen": 1693578067.78729,
+      "services": {
+        "dashboard": 42485
+      },
+      "metrics": {
+        "task_counts": {},
+        "bandwidth": {
+          "total": 100000000,
+          "workers": {},
+          "types": {}
+        },
+        "managed_bytes": 0,
+        "spilled_bytes": {
+          "memory": 0,
+          "disk": 0
+        },
+        "transfer": {
+          "incoming_bytes": 0,
+          "incoming_count": 0,
+          "incoming_count_total": 0,
+          "outgoing_bytes": 0,
+          "outgoing_count": 0,
+          "outgoing_count_total": 0
+        },
+        "event_loop_interval": 0.02,
+        "cpu": 0.0,
+        "memory": 427016192,
+        "time": 1693578067.746396,
+        "host_net_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "host_disk_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "num_fds": 22,
+        "gpu_utilization": 0,
+        "gpu_memory_used": 289603584,
+        "gpu": {
+          "utilization": 0,
+          "memory-used": 289603584
+        }
+      },
+      "status": "running",
+      "nanny": "tcp://127.0.0.1:46501",
+      "gpu": {
+        "memory-total": 34359738368,
+        "name": "Tesla V100-SXM2-32GB"
+      }
+    },
+    "tcp://127.0.0.1:41317": {
+      "type": "Worker",
+      "id": 0,
+      "host": "127.0.0.1",
+      "resources": {},
+      "local_directory": "/pfs/data5/home/fr/fr_fr/fr_as1829/projects/automl/pi/pi/42/dask-worker-space/worker-b0o_spfi",
+      "name": 0,
+      "nthreads": 1,
+      "memory_limit": 5368709120,
+      "last_seen": 1693578067.7152433,
+      "services": {
+        "dashboard": 43905
+      },
+      "metrics": {
+        "task_counts": {},
+        "bandwidth": {
+          "total": 100000000,
+          "workers": {},
+          "types": {}
+        },
+        "managed_bytes": 0,
+        "spilled_bytes": {
+          "memory": 0,
+          "disk": 0
+        },
+        "transfer": {
+          "incoming_bytes": 0,
+          "incoming_count": 0,
+          "incoming_count_total": 0,
+          "outgoing_bytes": 0,
+          "outgoing_count": 0,
+          "outgoing_count_total": 0
+        },
+        "event_loop_interval": 0.02,
+        "cpu": 0.0,
+        "memory": 427016192,
+        "time": 1693578067.6630523,
+        "host_net_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "host_disk_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "num_fds": 22,
+        "gpu_utilization": 0,
+        "gpu_memory_used": 289603584,
+        "gpu": {
+          "utilization": 0,
+          "memory-used": 289603584
+        }
+      },
+      "status": "running",
+      "nanny": "tcp://127.0.0.1:43933",
+      "gpu": {
+        "memory-total": 34359738368,
+        "name": "Tesla V100-SXM2-32GB"
+      }
+    },
+    "tcp://127.0.0.1:42257": {
+      "type": "Worker",
+      "id": 1,
+      "host": "127.0.0.1",
+      "resources": {},
+      "local_directory": "/pfs/data5/home/fr/fr_fr/fr_as1829/projects/automl/pi/pi/42/dask-worker-space/worker-ugxfnkpm",
+      "name": 1,
+      "nthreads": 1,
+      "memory_limit": 5368709120,
+      "last_seen": 1693578067.523271,
+      "services": {
+        "dashboard": 39287
+      },
+      "metrics": {
+        "task_counts": {},
+        "bandwidth": {
+          "total": 100000000,
+          "workers": {},
+          "types": {}
+        },
+        "managed_bytes": 0,
+        "spilled_bytes": {
+          "memory": 0,
+          "disk": 0
+        },
+        "transfer": {
+          "incoming_bytes": 0,
+          "incoming_count": 0,
+          "incoming_count_total": 0,
+          "outgoing_bytes": 0,
+          "outgoing_count": 0,
+          "outgoing_count_total": 0
+        },
+        "event_loop_interval": 0.02,
+        "cpu": 0.0,
+        "memory": 425472000,
+        "time": 1693578067.4752073,
+        "host_net_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "host_disk_io": {
+          "read_bps": 0.0,
+          "write_bps": 0.0
+        },
+        "num_fds": 22,
+        "gpu_utilization": 0,
+        "gpu_memory_used": 289603584,
+        "gpu": {
+          "utilization": 0,
+          "memory-used": 289603584
+        }
+      },
+      "status": "running",
+      "nanny": "tcp://127.0.0.1:44837",
+      "gpu": {
+        "memory-total": 34359738368,
+        "name": "Tesla V100-SXM2-32GB"
+      }
+    }
+  }
+}

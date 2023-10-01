@@ -1,0 +1,153 @@
+{
+  "hyperparameters": [
+    {
+      "name": "batch_size",
+      "type": "uniform_int",
+      "log": true,
+      "lower": 1,
+      "upper": 1000,
+      "default": 200
+    },
+    {
+      "name": "dropout_rate",
+      "type": "constant",
+      "value": 0.2
+    },
+    {
+      "name": "global_avg_pooling",
+      "type": "categorical",
+      "choices": [
+        true,
+        false
+      ],
+      "default": true,
+      "weights": null
+    },
+    {
+      "name": "kernel_size",
+      "type": "constant",
+      "value": 3
+    },
+    {
+      "name": "learning_rate_init",
+      "type": "uniform_float",
+      "log": true,
+      "lower": 1e-05,
+      "upper": 1.0,
+      "default": 0.001
+    },
+    {
+      "name": "n_channels_conv_0",
+      "type": "uniform_int",
+      "log": true,
+      "lower": 32,
+      "upper": 512,
+      "default": 512
+    },
+    {
+      "name": "n_channels_fc_0",
+      "type": "uniform_int",
+      "log": true,
+      "lower": 32,
+      "upper": 512,
+      "default": 512
+    },
+    {
+      "name": "n_conv_layers",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 1,
+      "upper": 3,
+      "default": 3
+    },
+    {
+      "name": "n_fc_layers",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 1,
+      "upper": 3,
+      "default": 3
+    },
+    {
+      "name": "use_BN",
+      "type": "categorical",
+      "choices": [
+        true,
+        false
+      ],
+      "default": true,
+      "weights": null
+    },
+    {
+      "name": "n_channels_conv_1",
+      "type": "uniform_int",
+      "log": true,
+      "lower": 16,
+      "upper": 512,
+      "default": 512
+    },
+    {
+      "name": "n_channels_conv_2",
+      "type": "uniform_int",
+      "log": true,
+      "lower": 16,
+      "upper": 512,
+      "default": 512
+    },
+    {
+      "name": "n_channels_fc_1",
+      "type": "uniform_int",
+      "log": true,
+      "lower": 16,
+      "upper": 512,
+      "default": 512
+    },
+    {
+      "name": "n_channels_fc_2",
+      "type": "uniform_int",
+      "log": true,
+      "lower": 16,
+      "upper": 512,
+      "default": 512
+    }
+  ],
+  "conditions": [
+    {
+      "child": "n_channels_conv_1",
+      "parent": "n_conv_layers",
+      "type": "IN",
+      "values": [
+        2,
+        3
+      ]
+    },
+    {
+      "child": "n_channels_conv_2",
+      "parent": "n_conv_layers",
+      "type": "IN",
+      "values": [
+        3
+      ]
+    },
+    {
+      "child": "n_channels_fc_1",
+      "parent": "n_fc_layers",
+      "type": "IN",
+      "values": [
+        2,
+        3
+      ]
+    },
+    {
+      "child": "n_channels_fc_2",
+      "parent": "n_fc_layers",
+      "type": "IN",
+      "values": [
+        3
+      ]
+    }
+  ],
+  "forbiddens": [],
+  "python_module_version": "0.6.1",
+  "json_format_version": 0.4
+}

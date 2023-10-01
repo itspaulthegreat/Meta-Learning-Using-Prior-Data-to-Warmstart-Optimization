@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+numpy = "*"
+torch = "*"
+torchvision = "*"
+tqdm = "*"
+torchsummary = "*"
+configspace = "==0.6.1"
+scikit-learn = "*"
+smac = ">=2.0.0"
+pandas = "*"
+thop = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
